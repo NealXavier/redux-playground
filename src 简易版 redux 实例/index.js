@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import store from "./store";
+// import store from "./store";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -12,18 +12,6 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-// 防止多个组件需要多次调用 subscribe ，把 subscrbe 上提到最高级
-// store.subscribe(()=>{
-//   root.render(
-//     <React.StrictMode>
-//       <App />
-//     </React.StrictMode>
-//   );
-// })
-
-// 用了 react-redux 
-
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

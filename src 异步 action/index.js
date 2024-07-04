@@ -14,15 +14,13 @@ root.render(
 );
 
 // 防止多个组件需要多次调用 subscribe ，把 subscrbe 上提到最高级
-// store.subscribe(()=>{
-//   root.render(
-//     <React.StrictMode>
-//       <App />
-//     </React.StrictMode>
-//   );
-// })
-
-// 用了 react-redux 
+store.subscribe(()=>{
+  root.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+})
 
 
 // If you want to start measuring performance in your app, pass a function

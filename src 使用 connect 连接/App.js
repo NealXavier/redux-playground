@@ -1,5 +1,5 @@
 import './App.css';
-import Count from '../src/container/count';
+import Count from './container/count';
 import store from "./store"
 import {Provider} from "react-redux"
 
